@@ -1,0 +1,66 @@
+.header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	background $white
+	z-index 10
+	&__in
+		min-height 50px
+
+.nav
+	width 706px
+	float right
+	&__list
+		font-size 0
+	&__item
+		margin-right 25px
+		display inline-block
+		font-geom(18px,1)
+
+		&:last-child
+			margin-right 0
+	&__link
+		padding-top 16px
+		padding-bottom 16px
+		display block
+		color $black
+		transition all .3 ease
+		&_active,
+		&:hover
+			color #545454
+			text-decoration none
+	&__item
+		.nav__link
+			position relative
+			&:after
+				position absolute
+				bottom 0
+				left 50%
+				content ""
+				width 0
+				height 0
+				display none
+				border-style solid
+				border-width 0 5.5px 6px 5.5px
+				border-color transparent transparent #000000 transparent
+				transition all .3s ease
+		.mPS2id-clicked
+			&:after
+				position absolute
+				bottom 0
+				left 50%
+				content ""
+				width 0
+				height 0
+				display block
+				border-style solid
+				border-width 0 5.5px 6px 5.5px
+				border-color transparent transparent #000000 transparent
+				transition all .3s ease
+
+.logo
+	margin-top 10px
+	float left
+	bg($logo)
+	text-indent -9999px

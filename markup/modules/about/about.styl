@@ -1,0 +1,49 @@
+.about
+	background url('../img/assets/about/about-bg.jpg') 0 0 no-repeat
+	background-size cover
+	&__w
+		background url('../img/general/about.png') 0 0 repeat
+		background-image none
+		background rgba(255, 255, 255, 0.6)
+
+	&__in
+		position relative
+		padding-top 94px
+		padding-bottom 170px
+
+	&__text
+		position relative
+		left -135px
+		margin-right 98px
+		// margin-left 173px
+		padding-top 26px
+		padding-bottom 30px
+		padding-left 133px
+		height 234px
+		background rgba(255,255,255,.6)
+		font-opreg(30px,36px)
+		color $black
+		&:before
+			position absolute
+			top 0
+			left -36px
+			content ''
+			bg($about_block_left)
+		&:after
+			position absolute
+			top 0
+			right -233px
+			content ''
+			bg($about_block_right)
+	&__text-w
+		position relative
+		margin-right -170px
+		z-index 1
+		strong
+			font-opsem(30px,32px)
+
+
+.title
+	&_about
+		margin-bottom 169px
+

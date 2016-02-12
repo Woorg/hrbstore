@@ -1,0 +1,45 @@
+doctype html
+|<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+|<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+|<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+|<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+include ../modules/bemto/bemto
+
+
+include ../modules/head/head
+
+include ../modules/header/header
+
+include ../modules/hero/hero
+include ../modules/about/about
+include ../modules/new/new
+include ../modules/promo/promo
+include ../modules/gallery/gallery
+include ../modules/links/links
+include ../modules/contacts/contacts
+include ../modules/map/map
+include ../modules/popup/popup
+
+
+head
+	+head(head.defaults)
+body.page
+	.layout#top
+		+header()
+
+		+hero()
+		+about()
+		+new()
+		+promo()
+		+gallery()
+		+links()
+
+		+b('footer').footer
+			+contacts()
+			+map()
+		+popup()
+
+	//- Main scripts. You can replace it, but I recommend you to leave it here
+	script(src='%=staticPrefix=%js/main%=hash=%%=min=%.js')
+|</html>

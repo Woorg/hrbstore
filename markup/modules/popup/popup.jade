@@ -1,0 +1,14 @@
+mixin popup()
+	+b.popup._callback.mfp-hide#popup-1
+		+e.header
+			+e.text Оставьте ваши данные и мы <br/>отправим вам СМС-сообщение <br/>для получения 10% скидки
+		+e.form
+			+e('form')(method='post')
+			+e.input
+				+e('input')(value='' placeholder='ИМЯ*' name='name')
+			+e.input
+				+e('input')(value='' placeholder='НОМЕР ТЕЛЕФОНА*' name='phone')
+			+e.input
+				+e('input')(value='' placeholder='E-MAIL' name='email')
+			+b.button._big._submit('button')(name='submit') ОТПРАВИТЬ
+

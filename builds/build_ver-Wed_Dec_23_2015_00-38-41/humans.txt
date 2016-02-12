@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technologies
+
+# TEAM
+
+	Igor Gorlov -- psd2html & wordpress integration -- gorlov35@gmail.com
+
+
+# TECHNOLOGIES
+
+    HTML5, CSS3, JS, WORDPRESS
+
